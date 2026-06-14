@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KyPet — Privacy Policy</title>
+<meta name="description" content="KyPet privacy policy. 100% offline, no accounts, no tracking, no data collection.">
+<style>
+  :root{--amber:#FF8820;--blue:#5858C0;--text:#1d1d22;--muted:#6b6b73;--bg:#f6f6f9;--line:#e6e6ec}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+  a{color:var(--amber);text-decoration:none}a:hover{text-decoration:underline}
+  .hero{background:linear-gradient(135deg,var(--blue),var(--amber));color:#fff;padding:48px 20px 40px}
+  .wrap{max-width:760px;margin:0 auto;padding:0 20px}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:26px}
+  .brand svg{width:34px;height:34px}
+  .hero h1{margin:18px 0 6px;font-size:30px;font-weight:800}.hero p{margin:0;opacity:.92}
+  main{max-width:760px;margin:-22px auto 60px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px 28px 8px;box-shadow:0 10px 30px rgba(0,0,0,.06)}
+  .toggle{display:flex;gap:8px;margin:0 0 18px}
+  .toggle button{border:1px solid var(--line);background:#fff;color:var(--text);padding:6px 14px;border-radius:999px;font-size:14px;cursor:pointer}
+  .toggle button.active{background:var(--amber);color:#fff;border-color:var(--amber)}
+  h2{font-size:20px;margin:26px 0 8px}
+  .muted{color:var(--muted);font-size:14px}
+  .badge{display:inline-block;background:rgba(255,136,32,.12);color:#b35e10;border-radius:999px;padding:4px 12px;font-size:13px;font-weight:600;margin-bottom:8px}
+  ul{padding-left:20px}
+  footer{max-width:760px;margin:0 auto 50px;padding:0 28px;color:var(--muted);font-size:13px;text-align:center}
+  hr{border:none;border-top:1px solid var(--line);margin:30px 0}
+  .lang[hidden]{display:none}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="brand">
+      <svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><circle cx="5.5" cy="11.5" r="2.1"/><circle cx="9.7" cy="6.7" r="2.1"/><circle cx="14.3" cy="6.7" r="2.1"/><circle cx="18.5" cy="11.5" r="2.1"/><path d="M12 11.2c-2.7 0-4.9 2.2-4.9 4.6 0 1.9 1.5 2.8 3.2 2.8.95 0 1.25-.28 1.7-.28s.75.28 1.7.28c1.7 0 3.2-.9 3.2-2.8 0-2.4-2.2-4.6-4.9-4.6z"/></svg>
+      KyPet
+    </div>
+    <h1>Privacy Policy</h1>
+    <p>Your pet's data, 100% on your device.</p>
+  </div>
+</header>
+
+<main>
+  <div class="toggle">
+    <button id="btn-en" class="active" onclick="setLang('en')">English</button>
+    <button id="btn-pt" onclick="setLang('pt')">Português</button>
+  </div>
+
+  <!-- ENGLISH -->
+  <section class="lang" id="lang-en">
+    <span class="badge">Data Not Collected</span>
+    <p>KyPet does not collect, transmit, or share any personal data. Everything you record about your
+       pet is processed entirely on your device and stored only there.</p>
+
+    <h2>What we collect</h2>
+    <p><strong>Nothing.</strong> No accounts, no servers, no cloud of our own, no analytics, and no
+       tracking. There is no advertising identifier (IDFA), and the app does not ask to track you.
+       The app works fully offline.</p>
+
+    <h2>Where your data lives</h2>
+    <ul>
+      <li>Pets, timeline events, weight, medications and document metadata are stored locally with
+          SwiftData on your device.</li>
+      <li>Photos and documents are stored in the app's local folder, protected by iOS file
+          protection.</li>
+      <li>Text recognition (OCR) and the AI assistant run on-device with Apple frameworks — your
+          pet's documents never leave your iPhone.</li>
+      <li>Reminders are scheduled locally. Nothing leaves your device unless <strong>you</strong>
+          choose to share or export it.</li>
+    </ul>
+
+    <h2>Network use</h2>
+    <p>The app uses the network only to (a) optionally download an on-device AI model and (b) process
+       in-app purchases through Apple. Neither sends us your pet's data.</p>
+
+    <h2>Camera &amp; photos</h2>
+    <p>The camera is used only to scan documents you point it at; the photo library is accessed only
+       when you pick a pet photo or a document to import. Images are processed on-device and never
+       uploaded.</p>
+
+    <h2>Sharing &amp; export</h2>
+    <p>When you share an emergency QR card, a Vet-Share PDF, or a backup file, it is created on your
+       device and goes only where you choose. You control what is shared and with whom.</p>
+
+    <h2>Purchases</h2>
+    <p>In-app purchases and subscriptions are processed by Apple through the App Store. We never
+       receive or store your payment data. Subscriptions are managed in your App Store settings.</p>
+
+    <h2>Children</h2>
+    <p>KyPet is rated 4+ and does not collect any data from anyone, including children.</p>
+
+    <h2>Contact</h2>
+    <p>Questions? Email <a href="mailto:bertini.b@icloud.com">bertini.b@icloud.com</a>.</p>
+  </section>
+
+  <!-- PORTUGUÊS -->
+  <section class="lang" id="lang-pt" hidden>
+    <span class="badge">Dados não coletados</span>
+    <p>O KyPet não coleta, transmite ou compartilha nenhum dado pessoal. Tudo o que você registra
+       sobre o seu pet é processado inteiramente no seu aparelho e armazenado apenas nele.</p>
+
+    <h2>O que coletamos</h2>
+    <p><strong>Nada.</strong> Sem contas, sem servidores, sem nuvem própria, sem analytics e sem
+       rastreamento. Não há identificador de publicidade (IDFA) e o app não pede para rastrear você.
+       O app funciona totalmente offline.</p>
+
+    <h2>Onde seus dados ficam</h2>
+    <ul>
+      <li>Pets, eventos da linha do tempo, peso, medicações e metadados de documentos ficam no seu
+          aparelho (SwiftData).</li>
+      <li>Fotos e documentos ficam na pasta local do app, protegidos pela proteção de arquivos do
+          iOS.</li>
+      <li>Reconhecimento de texto (OCR) e o assistente de IA rodam no aparelho com frameworks da
+          Apple — os documentos do seu pet nunca saem do seu iPhone.</li>
+      <li>Os lembretes são agendados localmente. Nada sai do seu aparelho, a não ser que
+          <strong>você</strong> escolha compartilhar ou exportar.</li>
+    </ul>
+
+    <h2>Uso da rede</h2>
+    <p>O app usa a rede apenas para (a) baixar opcionalmente um modelo de IA no aparelho e (b)
+       processar compras pela Apple. Nenhum dos dois nos envia os dados do seu pet.</p>
+
+    <h2>Câmera e fotos</h2>
+    <p>A câmera é usada apenas para escanear documentos que você aponta; a galeria só é acessada
+       quando você escolhe uma foto do pet ou um documento para importar. As imagens são processadas
+       no aparelho e nunca enviadas.</p>
+
+    <h2>Compartilhamento e exportação</h2>
+    <p>Ao compartilhar um cartão QR de emergência, um PDF para o veterinário ou um arquivo de backup,
+       ele é gerado no seu aparelho e vai apenas para onde você escolher. Você controla o que é
+       compartilhado e com quem.</p>
+
+    <h2>Compras</h2>
+    <p>Compras e assinaturas são processadas pela Apple via App Store. Nunca recebemos ou guardamos
+       seus dados de pagamento. As assinaturas são gerenciadas nas configurações da App Store.</p>
+
+    <h2>Crianças</h2>
+    <p>O KyPet é classificado como 4+ e não coleta dados de ninguém, incluindo crianças.</p>
+
+    <h2>Contato</h2>
+    <p>Dúvidas? Escreva para <a href="mailto:bertini.b@icloud.com">bertini.b@icloud.com</a>.</p>
+  </section>
+
+  <hr>
+  <p class="muted">Last updated / Última atualização: 2026-06-14 · KyPet</p>
+</main>
+
+<footer>© 2026 KyPet · <a href="../">Home</a> · <a href="../terms/">Terms</a> · <a href="../support/">Support</a></footer>
+
+<script>
+  function setLang(l){
+    document.getElementById('lang-en').hidden = (l!=='en');
+    document.getElementById('lang-pt').hidden = (l!=='pt');
+    document.getElementById('btn-en').classList.toggle('active', l==='en');
+    document.getElementById('btn-pt').classList.toggle('active', l==='pt');
+    document.documentElement.lang = l==='pt' ? 'pt-BR' : 'en';
+  }
+  if((navigator.language||'').toLowerCase().startsWith('pt')) setLang('pt');
+</script>
+</body>
+</html>
