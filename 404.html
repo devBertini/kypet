@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KyPet: Page not found</title>
+<meta name="description" content="This KyPet page does not exist.">
+<meta name="robots" content="noindex">
+<style>
+  :root{--amber:#FF8820;--amberText:#B05500;--amberDeep:#BB5A00;--blue:#5858C0;--text:#1d1d22;--muted:#6b6b73;--bg:#f6f6f9;--line:#e6e6ec}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+  a{color:var(--amberText);text-decoration:none}a:hover{text-decoration:underline}
+  .hero{background:linear-gradient(135deg,var(--blue),var(--amberDeep));color:#fff;padding:48px 20px 40px}
+  .wrap{max-width:760px;margin:0 auto;padding:0 20px}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:26px}
+  .brand svg{width:34px;height:34px}
+  .hero h1{margin:18px 0 6px;font-size:30px;font-weight:800}.hero p{margin:0;opacity:.92}
+  main{max-width:760px;margin:-22px auto 60px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px;box-shadow:0 10px 30px rgba(0,0,0,.06)}
+  .toggle{display:flex;gap:8px;margin:0 0 18px}
+  .toggle button{border:1px solid var(--line);background:#fff;color:var(--text);padding:6px 14px;border-radius:999px;font-size:14px;cursor:pointer}
+  .toggle button.active{background:var(--amberText);color:#fff;border-color:var(--amberText)}
+  .contact a{font-weight:700}
+  h2{font-size:18px;margin:22px 0 6px}
+  details{border:1px solid var(--line);border-radius:12px;padding:4px 14px;margin:10px 0;background:#fff}
+  summary{cursor:pointer;font-weight:600;padding:10px 0}
+  details p{margin:0 0 12px}
+  footer{max-width:760px;margin:0 auto 50px;padding:0 28px;color:var(--muted);font-size:13px;text-align:center}
+  .lang[hidden]{display:none}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="brand">
+      <svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><circle cx="5.5" cy="11.5" r="2.1"/><circle cx="9.7" cy="6.7" r="2.1"/><circle cx="14.3" cy="6.7" r="2.1"/><circle cx="18.5" cy="11.5" r="2.1"/><path d="M12 11.2c-2.7 0-4.9 2.2-4.9 4.6 0 1.9 1.5 2.8 3.2 2.8.95 0 1.25-.28 1.7-.28s.75.28 1.7.28c1.7 0 3.2-.9 3.2-2.8 0-2.4-2.2-4.6-4.9-4.6z"/></svg>
+      KyPet
+    </div>
+    <h1>Page not found</h1>
+    <p>Nothing here.</p>
+  </div>
+</header>
+
+<main>
+  <div class="toggle">
+    <button id="btn-en" class="active" onclick="setLang('en')">English</button>
+    <button id="btn-pt" onclick="setLang('pt')">Português</button>
+  </div>
+  <section class="lang" id="lang-en">
+    <p>This page does not exist. The <a href="/kypet/">KyPet home page</a> has the links to everything else.</p>
+  </section>
+  <section class="lang" id="lang-pt" hidden>
+    <p>Esta página não existe. A <a href="/kypet/">página inicial do KyPet</a> tem os links para todo o resto.</p>
+  </section>
+</main>
+
+<footer>© 2026 KyPet · <a href="/kypet/">Home</a> · <a href="/kypet/privacy/">Privacy</a> · <a href="/kypet/support/">Support</a></footer>
+
+<script>
+  function setLang(l){
+    document.getElementById('lang-en').hidden=(l!=='en');
+    document.getElementById('lang-pt').hidden=(l!=='pt');
+    document.getElementById('btn-en').classList.toggle('active', l==='en');
+    document.getElementById('btn-pt').classList.toggle('active', l==='pt');
+    document.documentElement.lang = l==='pt' ? 'pt-BR' : 'en';
+  }
+  if((navigator.language||'').toLowerCase().startsWith('pt')) setLang('pt');
+</script>
+</body>
+</html>

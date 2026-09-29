@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>KyPet — Your pet's complete digital life, 100% private</title>
-<meta name="description" content="Health timeline, weight, medications, documents and an emergency profile for your pet. 100% on your device — no accounts, no cloud, no tracking.">
+<title>KyPet: Pet Health &amp; Vaccines</title>
+<meta name="description" content="Vaccine reminders, health history, weight, medications, documents and an emergency card for your pet, on your device. No accounts, no servers, no tracking.">
 <style>
-  :root{--amber:#FF8820;--blue:#5858C0;--ink:#0E0E12;--text:#1d1d22;--muted:#6b6b73;--bg:#f6f6f9;--line:#e6e6ec}
+  :root{--amber:#FF8820;--amberText:#B05500;--amberDeep:#BB5A00;--blue:#5858C0;--ink:#0E0E12;--text:#1d1d22;--muted:#6b6b73;--bg:#f6f6f9;--line:#e6e6ec}
   *{box-sizing:border-box}
   body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
-  a{color:var(--amber);text-decoration:none}a:hover{text-decoration:underline}
-  .hero{background:linear-gradient(135deg,var(--blue),var(--amber));color:#fff;padding:64px 20px 56px;text-align:center}
+  a{color:var(--amberText);text-decoration:none}a:hover{text-decoration:underline}
+  .hero{background:linear-gradient(135deg,var(--blue),var(--amberDeep));color:#fff;padding:64px 20px 56px;text-align:center}
   .brand{display:inline-flex;align-items:center;gap:12px;font-weight:800;font-size:30px}
   .brand svg{width:40px;height:40px}
   .hero h1{margin:20px auto 10px;font-size:34px;max-width:620px;font-weight:800}
@@ -23,7 +23,6 @@
   .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:0 8px 24px rgba(0,0,0,.05)}
   .card h3{margin:0 0 6px;font-size:17px}
   .card p{margin:0;color:var(--muted);font-size:15px}
-  .ico{width:40px;height:40px;border-radius:11px;background:rgba(255,136,32,.14);color:#b35e10;display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:12px}
   .plans{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:10px 0 40px}
   .plan{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px}
   .plan.pro{border-color:var(--amber);box-shadow:0 8px 24px rgba(255,136,32,.18)}
@@ -44,14 +43,14 @@
   </div>
 
   <span class="lang" id="hero-en">
-    <h1>Your pet's whole life, in one private place</h1>
-    <p>Vaccines, weight, medications, documents and an emergency profile — all on your device.</p>
-    <div class="priv">No accounts · No cloud · No tracking</div>
+    <h1>Your pet's health and routine, in one private place</h1>
+    <p>Vaccines with reminders, weight, medications, documents and an emergency card, on your device.</p>
+    <div class="priv">No accounts · No servers · No tracking</div>
   </span>
   <span class="lang" id="hero-pt" hidden>
-    <h1>A vida inteira do seu pet, em um só lugar privado</h1>
-    <p>Vacinas, peso, medicações, documentos e perfil de emergência — tudo no seu aparelho.</p>
-    <div class="priv">Sem contas · Sem nuvem · Sem rastreamento</div>
+    <h1>A saúde e a rotina do seu pet, em um só lugar privado</h1>
+    <p>Vacinas com lembrete, peso, remédios, documentos e cartão de emergência, no seu aparelho.</p>
+    <div class="priv">Sem contas · Sem servidores · Sem rastreamento</div>
   </span>
 
   <div class="toggle">
@@ -64,12 +63,12 @@
   <!-- ENGLISH -->
   <section class="lang" id="lang-en">
     <div class="grid">
-      <div class="card"><div class="ico">📅</div><h3>Health Timeline</h3><p>Vaccines, vet visits, surgeries, exams and medications — one clear feed.</p></div>
-      <div class="card"><div class="ico">⚖️</div><h3>Weight tracking</h3><p>Simple charts and neutral trends over time.</p></div>
-      <div class="card"><div class="ico">💊</div><h3>Medication reminders</h3><p>Never miss a dose, antiparasitic or dewormer.</p></div>
-      <div class="card"><div class="ico">🗂️</div><h3>Pet Vault</h3><p>Store exams, prescriptions, vaccine cards and contracts. Scan or import.</p></div>
-      <div class="card"><div class="ico">🆘</div><h3>Emergency profile</h3><p>A shareable QR card if your pet is ever lost — works on any phone.</p></div>
-      <div class="card"><div class="ico">📤</div><h3>Vet-Share</h3><p>Hand any vet a complete health passport PDF — or open it in KyPet.</p></div>
+      <div class="card"><h3>Vaccine reminders</h3><p>Vaccines, flea and tick care and dewormers, with a reminder a week before and on the day.</p></div>
+      <div class="card"><h3>Health history</h3><p>Vaccines, vet visits, surgeries, exams and meds in one history, with tags and filters.</p></div>
+      <div class="card"><h3>Weight tracking</h3><p>Simple charts and neutral trends over time.</p></div>
+      <div class="card"><h3>Medication reminders</h3><p>A reminder for each dose at the time you choose.</p></div>
+      <div class="card"><h3>Pet Vault</h3><p>Keep exams, prescriptions and contracts. Scan or import.</p></div>
+      <div class="card"><h3>Emergency card</h3><p>A QR card with your contact that opens in any phone's camera.</p></div>
     </div>
 
     <h2 class="center">Free &amp; Pro</h2>
@@ -78,16 +77,16 @@
         <h3>Free</h3>
         <ul>
           <li>1 pet</li>
-          <li>Health timeline, weight &amp; reminders</li>
+          <li>Health history, weight &amp; reminders</li>
           <li>Up to 10 documents</li>
-          <li>Emergency QR · everything on device</li>
+          <li>Emergency QR card</li>
         </ul>
       </div>
       <div class="plan pro">
         <h3>Pro</h3>
         <ul>
           <li>Unlimited pets &amp; documents</li>
-          <li>Vet-Share health passport PDF</li>
+          <li>Health record PDF for your vet</li>
           <li>Encrypted backup &amp; per-document lock</li>
         </ul>
       </div>
@@ -99,12 +98,12 @@
   <!-- PORTUGUÊS -->
   <section class="lang" id="lang-pt" hidden>
     <div class="grid">
-      <div class="card"><div class="ico">📅</div><h3>Linha do tempo de saúde</h3><p>Vacinas, consultas, cirurgias, exames e medicações — um feed só.</p></div>
-      <div class="card"><div class="ico">⚖️</div><h3>Controle de peso</h3><p>Gráficos simples e tendências neutras ao longo do tempo.</p></div>
-      <div class="card"><div class="ico">💊</div><h3>Lembretes de medicação</h3><p>Nunca perca uma dose, antipulgas ou vermífugo.</p></div>
-      <div class="card"><div class="ico">🗂️</div><h3>Cofre do Pet</h3><p>Guarde exames, receitas, carteira de vacinação e contratos. Escaneie ou importe.</p></div>
-      <div class="card"><div class="ico">🆘</div><h3>Perfil de emergência</h3><p>Um cartão QR compartilhável caso seu pet se perca — funciona em qualquer celular.</p></div>
-      <div class="card"><div class="ico">📤</div><h3>Compartilhar com o vet</h3><p>Entregue ao veterinário um PDF completo de passaporte de saúde — ou abra no KyPet.</p></div>
+      <div class="card"><h3>Lembrete de vacinas</h3><p>Vacinas, antipulgas e vermífugos, com lembrete uma semana antes e no dia.</p></div>
+      <div class="card"><h3>Histórico de saúde</h3><p>Vacinas, consultas, cirurgias, exames e remédios em um só histórico, com etiquetas e filtros.</p></div>
+      <div class="card"><h3>Controle de peso</h3><p>Gráficos simples e tendências neutras ao longo do tempo.</p></div>
+      <div class="card"><h3>Lembretes de remédios</h3><p>Um lembrete para cada dose, no horário que você escolher.</p></div>
+      <div class="card"><h3>Cofre do Pet</h3><p>Guarde exames, receitas e contratos. Escaneie ou importe.</p></div>
+      <div class="card"><h3>Cartão de emergência</h3><p>Um cartão QR com o seu contato, que abre na câmera de qualquer celular.</p></div>
     </div>
 
     <h2 class="center">Grátis e Pro</h2>
@@ -113,16 +112,16 @@
         <h3>Grátis</h3>
         <ul>
           <li>1 pet</li>
-          <li>Linha do tempo, peso e lembretes</li>
+          <li>Histórico de saúde, peso e lembretes</li>
           <li>Até 10 documentos</li>
-          <li>QR de emergência · tudo no aparelho</li>
+          <li>Cartão QR de emergência</li>
         </ul>
       </div>
       <div class="plan pro">
         <h3>Pro</h3>
         <ul>
           <li>Pets e documentos ilimitados</li>
-          <li>PDF de passaporte de saúde para o vet</li>
+          <li>PDF do histórico de saúde para o veterinário</li>
           <li>Backup criptografado e bloqueio por documento</li>
         </ul>
       </div>
